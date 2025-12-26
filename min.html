@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+.navbar{
+     background: #333;
+}
+
+ /* Desktop Styles */
+.navbar, .nav-links, .features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    padding: 10px 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #007bff;
+    color: white;
+}
+
+.features {
+    padding: 20px 5%;
+    gap: 15px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    flex: 1;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.logo{
+    color: #f4f4f4;
+}
+
+
+@media screen and (min-width: 1200px) {
+   
+    .navbar, .features {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+        max-width: 800px;
+    }
+
+    
+    .features {
+        gap: 30px;
+        margin-top: -50px; 
+    }
+
+    .card {
+        padding: 40px;
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-10px); 
+    }
+}
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">BrandName</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to Our Site</h1>
+            <p>Experience design that adapts to your screen.</p>
+            <button class="btn">Get Started</button>
+        </section>
+
+        <section class="features">
+            <div class="card">
+                <h3>Feature One</h3>
+                <p>High-quality components for your projects.</p>
+            </div>
+            <div class="card">
+                <h3>Feature Two</h3>
+                <p>Fully responsive layouts for all devices.</p>
+            </div>
+            <div class="card">
+                <h3>Feature Three</h3>
+                <p>Fast loading and SEO optimized code.</p>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
+
+
